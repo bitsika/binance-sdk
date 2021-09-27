@@ -85,28 +85,28 @@ class Binance
     /**
      * Gets BNB Balance of BSC Wallet
      *
-     * @param string $wallet_address BSC Wallet Address
+     * @param string $walletAddress BSC Wallet Address
      * @return Http
      */
-    public function getBalance(string $wallet_address)
+    public function getBalance(string $walletAddress)
     {
         return $this->client->post('/balance', [
-            'address' => $wallet_address
+            'address' => $walletAddress
         ]);
     }
 
     /**
      * Get Coin Balance from BSC Wallet
      *
-     * @param string $wallet_address BSC Wallet Address
-     * @param string $contract_address Contract Address of Coin 
+     * @param string $walletAddress BSC Wallet Address
+     * @param string $contractAddress Contract Address of Coin 
      * @return Http
      */
-    public function getTokenBalance(string $wallet_address, string $contract_address)
+    public function getTokenBalance(string $walletAddress, string $contractAddress)
     {
         return $this->client->post('/token/balance', [
-            'address' => $wallet_address,
-            'contractAddress' => $contract_address
+            'address' => $walletAddress,
+            'contractAddress' => $contractAddress
         ]);
     }
 
