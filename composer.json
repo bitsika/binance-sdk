@@ -1,0 +1,32 @@
+{
+    "name": "bitsika/binance-sdk",
+    "description": "Binance-Sdk: A laravel package to connect to Bitsika's Binance Wrapper",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^7.3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bitsika\\BinanceSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muheez Jimoh",
+            "email": "jamuheez2009@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bitsika\\BinanceSdk\\Providers\\BinanceServiceProvider"
+            ]
+        }
+    }
+}
