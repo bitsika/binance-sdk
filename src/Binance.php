@@ -76,7 +76,7 @@ class Binance
      */
     public function getAccountFromKeystore(string $keystore) 
     {
-        return $this->client->post('/get-account', [
+        return $this->client->post('/keystore/get-account', [
             'keystore' => $keystore,
             'password' => $this->password
         ]);
