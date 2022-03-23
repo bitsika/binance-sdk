@@ -205,4 +205,18 @@ class Binance
 
         return $this->client->post('/keystore/transfer/token', $data);
     }
+
+    /**
+     * Get Transaction Receipt as well as transaction details
+     * 
+     * returns null if transaction is pending
+     *
+     * @param string $transactionHash Transaction Hash on the chain
+     * @return Http
+     */
+    public function getTransactionReceipt(string $transactionHash) {
+        return $this->client->post('/transaction/receipt', [
+            'transactionHash' => $transactionHash
+        ]);
+    }
 }

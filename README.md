@@ -49,3 +49,6 @@ Here are some of the methods available
     - transferToken()
     - transferBNBFromKeystore()
     - transferTokenFromKeystore()
+
+- Transaction
+    - getTransactionReceipt()
