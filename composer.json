@@ -3,7 +3,7 @@
     "description": "Binance-Sdk: A laravel package to connect to Bitsika's Binance Wrapper",
     "type": "project",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4|^8.0",
         "guzzlehttp/guzzle": "^7.3.0"
     },
     "license": "MIT",
@@ -16,6 +16,10 @@
         {
             "name": "Muheez Jimoh",
             "email": "jamuheez2009@gmail.com"
+        },
+        {
+            "name": "Tommie Darku",
+            "email": "tombel24@gmail.com"
         }
     ],
     "minimum-stability": "dev",
